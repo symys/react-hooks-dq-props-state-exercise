@@ -9,7 +9,7 @@ import GlowingBaby from "../assets/glowing-eyes.png";
 
 function BabyHog(props) {
 
-  let [weight, setWeight] = useState(50)
+  let [weight, setWeight] = useState(100)
   function handleChangeWeight(e) {
     // how can we reuse this for both buttons?
     // perhaps something with e.target.name === "+"
@@ -37,7 +37,7 @@ function BabyHog(props) {
       <div className="hb-wrap">
         <img
           src={eyeColorMapper[props.eyeColor]}
-          style={{ height: "200px" }}
+          style={{ height: `${weight}px` }}
           alt="MasterBlasterJrJr"
         />
       </div>
