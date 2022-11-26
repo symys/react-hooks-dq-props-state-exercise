@@ -9,7 +9,7 @@ import GlowingBaby from "../assets/glowing-eyes.png";
 
 function BabyHog(props) {
 
-  let [weight, setWeight] = useState(0)
+  let [weight, setWeight] = useState(50)
   function handleChangeWeight(e) {
     // how can we reuse this for both buttons?
     // perhaps something with e.target.name === "+"
